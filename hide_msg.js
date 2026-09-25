@@ -1,0 +1,1 @@
+const fs = require('fs'); let html = fs.readFileSync('index.html', 'utf8'); html = html.replace('</head>', '<style>.GLWhGq:has([data-hook="form-field-write_a_message"]) { display: none !important; }</style></head>'); fs.writeFileSync('index.html', html);
