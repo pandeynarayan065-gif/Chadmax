@@ -1,0 +1,1 @@
+const fs = require('fs'); let html = fs.readFileSync('Chadmax _ Ultimate Guide For Looksmaxxing.html', 'utf8'); html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '').replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, ''); console.log(html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').substring(0, 2000));
