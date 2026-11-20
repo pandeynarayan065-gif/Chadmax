@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YTMAX — Earn Your 1st Lakh on YouTube | Chadtag</title>
+<meta name="description" content="The YouTube growth and monetization system behind 783K subscribers and ₹10 Lac+ revenue, with ₹0 spent on ads. 6 modules. ₹699, one-time.">
+<meta property="og:title" content="YTMAX — Earn Your 1st Lakh on YouTube">
+<meta property="og:description" content="783K subscribers. ₹10 Lac+ revenue. ₹0 on ads. The exact system, in 6 modules.">
+<meta property="og:image" content="assets/plaque.jpg">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+:root{
+  --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --serif:'DM Serif Display',Georgia,serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --black:#1d1d1f;
+  --ink:#0b0b0f;
+  --ink-2:#16161c;
+  --gray:#86868b;
+  --gray-d:#6e6e73;
+  --light:#f5f5f7;
+  --line:rgba(0,0,0,0.08);
+  --line-d:rgba(255,255,255,0.1);
+  --white:#fff;
+  --red:#ff0033;
+  --red-soft:#fff0f2;
+  --green:#1f9d55;
+  --r:14px;
+  --r-lg:22px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.sec{padding:110px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray)}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(255,0,51,0.15)}
+.h2{font-family:var(--serif);font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.04;letter-spacing:-0.02em;margin:14px 0 14px}
+.h2 em{font-style:normal;color:var(--gray)}
+.lead{font-size:1rem;color:var(--gray-d);line-height:1.7;max-width:560px}
+.center{text-align:center}.center .lead{margin:0 auto}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.75);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line);height:54px;display:flex;align-items:center}
+.nw{display:flex;align-items:center;justify-content:space-between;width:100%}
+.n-logo{font-weight:800;font-size:0.92rem;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px}
+.n-logo span{font-weight:400;color:var(--gray);font-size:0.8rem}
+.yt-ic{width:22px;height:16px;border-radius:4px;background:var(--red);position:relative;flex:none}
+.yt-ic::after{content:"";position:absolute;left:8px;top:4px;border-left:7px solid #fff;border-top:4px solid transparent;border-bottom:4px solid transparent}
+.n-links{display:flex;gap:26px;font-size:0.78rem;color:var(--gray-d);font-weight:500}
+.n-links a:hover{color:var(--black)}
+.n-subs{font-family:var(--mono);font-size:0.72rem;color:var(--gray-d);display:flex;align-items:center;gap:6px}
+.live{width:6px;height:6px;border-radius:50%;background:var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,0,51,.5)}100%{box-shadow:0 0 0 8px rgba(255,0,51,0)}}
+.n-cta{font-size:0.78rem;font-weight:700;background:var(--black);color:var(--white);padding:8px 18px;border-radius:980px;transition:transform .2s,background .2s}
+.n-cta:hover{background:var(--red)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--white);padding:17px 34px;font-weight:700;font-size:0.95rem;border-radius:980px;transition:transform .2s,box-shadow .2s,background .2s;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+.btn:hover{transform:translateY(-2px);background:var(--red);box-shadow:0 14px 34px -10px rgba(255,0,51,.55)}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(3px)}
+.btn-red{background:var(--red);box-shadow:0 10px 30px -10px rgba(255,0,51,.6)}
+.btn-red:hover{background:#e0002d}
+.btn-ghost{font-size:0.86rem;color:var(--gray-d);font-weight:600;border-bottom:1px solid var(--line);padding-bottom:2px}
+.btn-ghost:hover{color:var(--black);border-color:var(--black)}
+
+/* HERO */
+.hero{position:relative;padding:72px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%);opacity:.7;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;font-size:0.74rem;font-weight:600;background:var(--white);border:1px solid var(--line);border-radius:980px;padding:6px 14px 6px 6px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.pill b{background:var(--red);color:#fff;font-size:0.62rem;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:980px}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.7rem,6vw,4.9rem);line-height:0.98;letter-spacing:-0.035em;margin:22px 0 22px}
+.hero-h1 .red{color:var(--red)}
+.hero-h1 em{font-style:normal;color:var(--gray)}
+.hero-sub{font-size:1.06rem;color:var(--gray-d);line-height:1.65;max-width:520px;margin-bottom:28px}
+.hero-sub b{color:var(--black)}
+.price-row{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+.p-old{font-size:1.15rem;color:var(--gray);text-decoration:line-through}
+.p-new{font-size:2.6rem;font-weight:900;letter-spacing:-0.03em}
+.p-tag{font-size:0.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#eaf7ef;color:var(--green);padding:5px 10px;border-radius:980px;align-self:center}
+.p-note{font-size:0.78rem;color:var(--gray-d);margin-bottom:26px;max-width:480px}
+.hero-btns{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;font-size:0.74rem;color:var(--gray-d);font-weight:500}
+.trust span::before{content:"✓ ";color:var(--green);font-weight:800}
+
+/* STUDIO CARD (hero visual) */
+.studio{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:22px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.2);position:relative}
+.studio-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.studio-ch{display:flex;align-items:center;gap:10px}
+.studio-ch img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #2a2a33}
+.studio-ch b{font-size:0.86rem;display:block}
+.studio-ch small{font-size:0.68rem;color:#8a8a96}
+.studio-badge{font-size:0.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a8a96;border:1px solid var(--line-d);border-radius:980px;padding:4px 10px}
+.studio-big{font-family:var(--mono);font-size:clamp(2.4rem,5vw,3.3rem);font-weight:700;letter-spacing:-0.04em;line-height:1}
+.studio-lbl{font-size:0.72rem;color:#8a8a96;margin:6px 0 16px;display:flex;justify-content:space-between}
+.studio-lbl .up{color:#3ddc84;font-weight:700}
+.chart{width:100%;height:150px;display:block}
+.chart .area{fill:url(#g)}
+.chart .ln{fill:none;stroke:var(--red);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.2s .3s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.chart .pt{fill:#fff;stroke:var(--red);stroke-width:2.5}
+.chart text{fill:#8a8a96;font-family:var(--mono);font-size:10px}
+.studio-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.studio-row div{background:var(--ink-2);border:1px solid var(--line-d);border-radius:12px;padding:12px}
+.studio-row b{font-family:var(--mono);font-size:1.1rem;display:block}
+.studio-row small{font-size:0.64rem;color:#8a8a96}
+.float-tag{position:absolute;background:#fff;color:var(--black);border-radius:12px;padding:10px 14px;font-size:0.72rem;font-weight:600;box-shadow:0 14px 30px -10px rgba(0,0,0,.35);display:flex;align-items:center;gap:8px;animation:bob 4s ease-in-out infinite}
+.float-tag b{font-family:var(--mono);font-size:0.9rem}
+.ft-1{top:-18px;right:-14px}
+.ft-2{top:190px;left:-30px;animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+
+/* TICKER */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;border-block:1px solid #000;margin-top:56px}
+.ticker-track{display:flex;gap:48px;padding:16px 0;width:max-content;animation:scroll 38s linear infinite}
+.ticker-track span{font-family:var(--mono);font-size:0.82rem;font-weight:500;white-space:nowrap;display:flex;align-items:center;gap:48px;color:#d6d6de}
+.ticker-track span b{color:#fff}
+.ticker-track span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--line);gap:1px;margin-top:48px}
+.stat{background:var(--white);padding:34px 22px;position:relative}
+.stat-n{font-size:clamp(2rem,4vw,2.8rem);font-weight:900;letter-spacing:-0.04em;display:block;line-height:1}
+.stat-l{font-size:0.76rem;color:var(--gray-d);font-weight:500;margin-top:10px;display:block}
+.stat-k{position:absolute;top:16px;right:18px;font-family:var(--mono);font-size:0.6rem;color:var(--gray)}
+
+/* PROGRESS TO 1M */
+.goal{margin-top:24px;background:var(--light);border-radius:var(--r-lg);padding:26px 28px}
+.goal-top{display:flex;justify-content:space-between;align-items:baseline;font-size:0.8rem;color:var(--gray-d);margin-bottom:12px;gap:12px;flex-wrap:wrap}
+.goal-top b{color:var(--black);font-family:var(--mono)}
+.bar{height:12px;background:#e3e3e8;border-radius:980px;overflow:hidden;position:relative}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff5a76,var(--red));border-radius:980px;transition:width 1.8s cubic-bezier(.3,0,.2,1)}
+.ticks{display:flex;justify-content:space-between;margin-top:10px;font-family:var(--mono);font-size:0.64rem;color:var(--gray)}
+
+/* PROBLEM — NUMBERS */
+.funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.fn{border-radius:var(--r-lg);padding:30px 26px;border:1px solid var(--line);position:relative;overflow:hidden}
+.fn-n{font-size:clamp(2.6rem,6vw,4rem);font-weight:900;letter-spacing:-0.05em;line-height:1}
+.fn-t{font-weight:700;margin:12px 0 6px}
+.fn-d{font-size:0.84rem;color:var(--gray-d);line-height:1.6}
+.fn-bar{display:flex;flex-wrap:wrap;gap:3px;margin-top:20px}
+.fn-bar i{width:8px;height:8px;border-radius:2px;background:#d9d9de}
+.fn-bar i.on{background:var(--red)}
+.fn.dark{background:var(--ink);color:#fff;border-color:#000}
+.fn.dark .fn-d{color:#a1a1aa}
+.fn.dark .fn-bar i{background:#2a2a33}
+.fn.dark .fn-bar i.on{background:var(--red)}
+
+/* TIMELINE */
+.tl-wrap{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:start;margin-top:56px}
+.tl-img{border-radius:var(--r-lg);overflow:hidden;position:sticky;top:90px;box-shadow:0 20px 50px -20px rgba(0,0,0,.35)}
+.tl-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tl-img figcaption{position:absolute;left:14px;top:14px;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);color:#fff;font-size:0.7rem;font-family:var(--mono);padding:6px 10px;border-radius:8px}
+.tl{list-style:none;position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--red),#ffd0d8)}
+.tl li{position:relative;padding:0 0 34px}
+.tl li::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--red)}
+.tl li.now::before{background:var(--red);box-shadow:0 0 0 6px rgba(255,0,51,.15)}
+.tl-k{font-family:var(--mono);font-size:0.68rem;color:var(--gray);letter-spacing:.06em;text-transform:uppercase}
+.tl-n{font-size:2rem;font-weight:900;letter-spacing:-0.04em;line-height:1.1;margin:4px 0}
+.tl-d{font-size:0.88rem;color:var(--gray-d);line-height:1.6;max-width:440px}
+
+/* DARK BAND */
+.band{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(255,0,51,.22),transparent 65%);top:-320px;right:-220px;pointer-events:none}
+.band .eyebrow{color:#8a8a96}
+.band .h2 em{color:#6e6e78}
+.band .lead{color:#a1a1aa}
+
+/* MODULES */
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px;position:relative}
+.mod{background:var(--ink-2);border:1px solid var(--line-d);border-radius:var(--r-lg);padding:26px 24px 24px;transition:transform .25s,border-color .25s,background .25s;position:relative;overflow:hidden}
+.mod:hover{transform:translateY(-4px);border-color:rgba(255,0,51,.5);background:#1b1b22}
+.mod-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.mod-n{font-family:var(--mono);font-size:0.7rem;color:#8a8a96}
+.mod-ic{width:40px;height:40px;border-radius:12px;background:rgba(255,0,51,.12);color:var(--red);display:grid;place-items:center}
+.mod-ic svg{width:20px;height:20px}
+.mod h3{font-size:1.08rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:8px}
+.mod p{font-size:0.84rem;color:#a1a1aa;line-height:1.62}
+.mod-big{position:absolute;right:-6px;bottom:-26px;font-family:var(--serif);font-size:7rem;color:rgba(255,255,255,.035);line-height:1;pointer-events:none}
+
+/* PROOF */
+.proof-grid{display:grid;grid-template-columns:1.1fr 0.9fr 1fr;gap:16px;margin-top:52px}
+.pc{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);background:var(--white);display:flex;flex-direction:column}
+.pc-img{flex:1;overflow:hidden;background:var(--light)}
+.pc-img img{width:100%;height:100%;object-fit:cover}
+.pc-cap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font-size:0.78rem;font-weight:600;border-top:1px solid var(--line);gap:10px}
+.pc-cap small{font-family:var(--mono);font-size:0.64rem;color:var(--green);font-weight:700}
+.pc.metric{background:var(--red);color:#fff;border:none;padding:30px 26px;justify-content:space-between}
+.pc.metric .big{font-size:clamp(2.6rem,5vw,3.6rem);font-weight:900;letter-spacing:-0.05em;line-height:1}
+.pc.metric p{font-size:0.86rem;line-height:1.6;opacity:.9;margin-top:10px}
+.pc.metric .rows{margin-top:24px;border-top:1px solid rgba(255,255,255,.25)}
+.pc.metric .rows div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:0.8rem}
+.pc.metric .rows b{font-family:var(--mono)}
+.stack{display:grid;gap:16px}
+.pc.dark{background:var(--ink);color:#fff;border:none;padding:26px}
+.pc.dark .big{font-size:2.6rem;font-weight:900;letter-spacing:-0.05em;line-height:1}
+.pc.dark p{font-size:0.82rem;color:#a1a1aa;margin-top:8px;line-height:1.6}
+
+/* ECOSYSTEM */
+.eco{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.eco-c{border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;position:relative;background:var(--white)}
+.eco-c.hl{border:2px solid var(--black);box-shadow:0 20px 40px -24px rgba(0,0,0,.3)}
+.eco-tag{font-family:var(--mono);font-size:0.62rem;color:var(--gray);letter-spacing:.08em;text-transform:uppercase}
+.eco-c h3{font-family:var(--serif);font-size:1.8rem;font-weight:400;letter-spacing:-0.02em;margin:6px 0 18px}
+.eco-c dl{display:grid;gap:10px}
+.eco-c dl div{display:flex;justify-content:space-between;font-size:0.82rem;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.eco-c dt{color:var(--gray-d)}
+.eco-c dd{font-weight:800;font-family:var(--mono)}
+.eco-you{position:absolute;top:-11px;left:24px;background:var(--black);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:980px}
+
+/* COMPARE */
+.cmp{margin-top:48px;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;border-top:1px solid var(--line)}
+.cmp-row:first-child{border-top:none;background:var(--light);font-size:0.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-d)}
+.cmp-row div{padding:16px 20px;font-size:0.88rem}
+.cmp-row div:nth-child(2){color:var(--gray-d)}
+.cmp-row div:nth-child(3){font-weight:700;background:rgba(255,0,51,.03)}
+.cmp-row:first-child div:nth-child(3){color:var(--red);background:var(--red-soft)}
+
+/* WHO */
+.who{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+.who-c{border-radius:var(--r-lg);padding:28px;background:var(--light)}
+.who-c h3{font-size:0.72rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;color:var(--gray-d)}
+.who-c ul{list-style:none;display:grid;gap:14px}
+.who-c li{display:flex;gap:12px;font-size:0.9rem;line-height:1.55}
+.who-c li i{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:0.7rem;font-weight:900;margin-top:1px}
+.who-c.yes li i{background:#dff3e6;color:var(--green)}
+.who-c.no li i{background:#fde3e7;color:var(--red)}
+.who-c li b{font-weight:700}
+
+/* OFFER */
+.offer{background:var(--ink);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+.offer::after{content:"";position:absolute;inset:auto -120px -220px auto;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(255,0,51,.35),transparent 65%);pointer-events:none}
+.offer .h2{color:#fff}
+.offer .h2 em{color:#6e6e78}
+.offer-list{list-style:none;display:grid;gap:12px;margin-top:22px}
+.offer-list li{display:flex;justify-content:space-between;font-size:0.9rem;border-bottom:1px solid var(--line-d);padding-bottom:12px;color:#d6d6de}
+.offer-list li b{font-family:var(--mono);color:#fff}
+.ticket{background:#fff;color:var(--black);border-radius:var(--r-lg);padding:30px;position:relative;z-index:1}
+.ticket-top{display:flex;justify-content:space-between;font-size:0.68rem;font-family:var(--mono);color:var(--gray);text-transform:uppercase;letter-spacing:.06em}
+.ticket .p-new{font-size:3.4rem;display:block;margin:14px 0 2px}
+.ticket .save{display:inline-block;font-size:0.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#eaf7ef;color:var(--green);padding:5px 10px;border-radius:980px;margin-left:8px;vertical-align:middle}
+.ticket hr{border:none;border-top:2px dashed var(--line);margin:22px -30px}
+.ticket .btn{width:100%;justify-content:center}
+.ticket small{display:block;text-align:center;font-size:0.72rem;color:var(--gray-d);margin-top:14px}
+.coach{font-size:0.78rem;background:#fff6e5;color:#8a5a00;border-radius:10px;padding:10px 12px;margin-top:14px;line-height:1.5}
+
+/* FAQ */
+.faq{max-width:760px;margin:48px auto 0}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:700;font-size:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:28px;height:28px;border-radius:50%;background:var(--light);display:grid;place-items:center;font-weight:500;font-size:1.1rem;transition:transform .25s,background .25s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--black);color:#fff}
+.faq p{font-size:0.92rem;color:var(--gray-d);line-height:1.7;padding:0 48px 24px 0}
+
+/* FINAL */
+.final{text-align:center;padding:120px 0 140px;position:relative;overflow:hidden}
+.final-n{font-family:var(--mono);font-weight:700;font-size:clamp(4rem,14vw,11rem);letter-spacing:-0.06em;line-height:.9;background:linear-gradient(180deg,var(--black),#c7c7cc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.final .h2{margin-top:18px}
+.final .btn{margin-top:30px}
+.final small{display:block;margin-top:16px;font-size:0.76rem;color:var(--gray-d)}
+
+footer{border-top:1px solid var(--line);padding:30px 0 110px}
+.fw{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:0.76rem;color:var(--gray-d)}
+.fw nav{all:unset;display:flex;gap:20px}
+.fw a:hover{color:var(--black)}
+
+/* STICKY BUY BAR */
+.sbar{position:fixed;left:50%;bottom:16px;transform:translate(-50%,140%);z-index:120;background:rgba(11,11,15,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#fff;border-radius:980px;padding:8px 8px 8px 22px;display:flex;align-items:center;gap:18px;box-shadow:0 20px 40px -12px rgba(0,0,0,.5);transition:transform .4s cubic-bezier(.3,0,.2,1);width:max-content;max-width:calc(100% - 24px)}
+.sbar.show{transform:translate(-50%,0)}
+.sbar .sb-p{font-weight:900;font-size:1.05rem}
+.sbar .sb-p s{font-weight:500;color:#8a8a96;font-size:0.8rem;margin-left:6px}
+.sbar .sb-t{font-size:0.7rem;color:#a1a1aa}
+.sbar .btn{padding:12px 22px;font-size:0.85rem;box-shadow:none}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.ticker-track,.float-tag,.live,.chart .ln{animation:none;stroke-dashoffset:0}}
+
+/* RESPONSIVE */
+@media (max-width:920px){
+  .n-links{display:none}
+  .hero-grid,.tl-wrap,.offer{grid-template-columns:1fr}
+  .studio{max-width:520px;margin:0 auto;width:100%}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .mods,.eco{grid-template-columns:1fr 1fr}
+  .proof-grid{grid-template-columns:1fr 1fr}
+  .proof-grid .pc.metric{grid-column:1/-1}
+  .tl-img{position:relative;top:0;max-width:520px}
+  .offer{padding:40px 28px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .sec{padding:80px 0}
+  .hero{padding-top:44px}
+  .n-subs{display:none}
+  .funnel,.mods,.eco,.who,.proof-grid{grid-template-columns:1fr}
+  .ft-1{right:8px;top:-16px}.ft-2{left:auto;right:8px;top:auto;bottom:-18px}
+  .studio-row b{font-size:0.95rem}
+  .cmp-row{grid-template-columns:1.2fr .9fr .9fr}
+  .cmp-row div{padding:13px 12px;font-size:0.78rem}
+  .faq p{padding-right:0}
+  .offer{padding:32px 20px;border-radius:22px}
+  .ticket{padding:24px}.ticket hr{margin:20px -24px}
+  .sbar{padding-left:16px;gap:12px}
+  .sbar .sb-t{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nw">
+    <a href="#" class="n-logo"><span class="yt-ic"></span>Chadtag<span>/ YTMAX</span></a>
+    <div class="n-links">
+      <a href="#numbers">Numbers</a>
+      <a href="#modules">Modules</a>
+      <a href="#proof">Proof</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="n-subs"><span class="live"></span>783K subs</div>
+    <a href="https://cosmofeed.com/view_ch/2a2a92b1-9166-4272-b797-106092f8a84f" target="_blank" rel="noopener" class="n-cta">Get YTMAX — ₹699</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="pill"><b>YTMAX</b>Earn your 1st lakh · by Chadtag</span>
+      <h1 class="hero-h1">783K subscribers.<br><span class="red">₹10 Lac+.</span><br><em>₹0 on ads.</em></h1>
+      <p class="hero-sub">The exact YouTube growth and monetization system behind <b>130K+ subscribers in year one</b>, a <b>783,000-subscriber</b> channel, and <b>₹10 Lac+ in revenue</b>. No luck. No paid ads. Six modules, in order.</p>
+      <div class="price-row">
+        <span class="p-old">₹1,999</span>
+        <span class="p-new">₹699</span>
+        <span class="p-tag">Save 65%</span>
+      </div>
+      <p class="p-note">₹1,999 included 1-on-1 coaching calls. Coaching is no longer offered, so the full course is now ₹699.</p>
+      <div class="hero-btns">
+        <a href="https://cosmofeed.com/view_ch/2a2a92b1-9166-4272-b797-106092f8a84f" target="_blank" rel="noopener" class="btn btn-red">Get YTMAX — ₹699 <span class="arr">→</span></a>
+        <a href="#modules" class="btn-ghost">See the 6 modules ↓</a>
+      </div>
+      <div class="trust"><span>Instant access</span><span>One-time payment</span><span>Lifetime access</span></div>
+    </div>
+
+    <div class="rv d2" style="position:relative">
+      <div class="studio" aria-label="Channel stats">
+        <div class="studio-top">
+          <div class="studio-ch"><img src="assets/chadtag.jpg" alt="Chadtag"><div><b>Chadtag</b><small>@chadtag</small></div></div>
+          <span class="studio-badge">Channel stats</span>
+        </div>
+        <div class="studio-big"><span data-count="783" data-suffix="K">0K</span></div>
+        <div class="studio-lbl"><span>Subscribers</span><span class="up">100% organic</span></div>
+        <svg class="chart" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff0033" stop-opacity=".35"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient></defs>
+          <path class="area" d="M10,138 L90,131 L170,112 L290,36 L390,14 L390,150 L10,150 Z"/>
+          <path class="ln" d="M10,138 L90,131 L170,112 L290,36 L390,14"/>
+          <circle class="pt" cx="90" cy="131" r="4"/><circle class="pt" cx="170" cy="112" r="4"/><circle class="pt" cx="290" cy="36" r="4"/><circle class="pt" cx="390" cy="14" r="5"/>
+          <text x="10" y="126">0</text><text x="76" y="122">100K</text><text x="156" y="103">130K</text><text x="270" y="27">655K</text><text x="346" y="30">783K</text>
+        </svg>
+        <div class="studio-row">
+          <div><b>₹10L+</b><small>Revenue</small></div>
+          <div><b>₹0</b><small>Ad spend</small></div>
+          <div><b>130K</b><small>Subs, year 1</small></div>
+        </div>
+      </div>
+      <div class="float-tag ft-1">🥈 <span>Silver Play Button</span> <b>100K</b></div>
+      <div class="float-tag ft-2">📈 <span>Up from 655K</span> <b>+128K</b></div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span><b>783K</b> subscribers</span><span><b>₹10 Lac+</b> revenue</span><span><b>₹0</b> on ads</span><span><b>130K+</b> subs in year one</span><span><b>6</b> modules</span><span><b>₹699</b> one-time</span><span><b>258K</b> on Instagram</span><span><b>23M+</b> reach in 30 days</span>
+      <span><b>783K</b> subscribers</span><span><b>₹10 Lac+</b> revenue</span><span><b>₹0</b> on ads</span><span><b>130K+</b> subs in year one</span><span><b>6</b> modules</span><span><b>₹699</b> one-time</span><span><b>258K</b> on Instagram</span><span><b>23M+</b> reach in 30 days</span>
+    </div>
+  </div>
+</header>
+
+<!-- NUMBERS -->
+<section class="sec" id="numbers" style="padding-top:90px">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>The numbers</span>
+      <h2 class="h2">No lifestyle shots.<br><em>Just the scoreboard.</em></h2>
+      <p class="lead">Every number below comes from one channel, grown organically by Ayush Sharma (Chadtag).</p>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><span class="stat-k">SUBS</span><span class="stat-n" data-count="783" data-suffix="K+">0</span><span class="stat-l">YouTube subscribers</span></div>
+      <div class="stat"><span class="stat-k">REV</span><span class="stat-n">₹<span data-count="10">0</span>L+</span><span class="stat-l">Revenue from YouTube</span></div>
+      <div class="stat"><span class="stat-k">YR 1</span><span class="stat-n" data-count="130" data-suffix="K+">0</span><span class="stat-l">Subscribers in the first year</span></div>
+      <div class="stat"><span class="stat-k">ADS</span><span class="stat-n">₹0</span><span class="stat-l">Spent on advertising</span></div>
+    </div>
+    <div class="goal rv">
+      <div class="goal-top"><span>Road to 1,000,000</span><span><b>783,000</b> / 1,000,000 · <b>78.3%</b></span></div>
+      <div class="bar"><i data-w="78.3"></i></div>
+      <div class="ticks"><span>0</span><span>100K 🥈</span><span>250K</span><span>500K</span><span>750K</span><span>1M 🥇</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="sec" style="background:var(--light)">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>The problem</span>
+      <h2 class="h2">Out of 100 YouTube channels,<br><em>80 are channels in name only.</em></h2>
+      <p class="lead">Months of editing, titles and thumbnails, then 27 views and zero income. The problem isn't effort. It's not knowing how growth and monetization actually work.</p>
+    </div>
+    <div class="funnel">
+      <div class="fn rv" style="background:#fff">
+        <div class="fn-n">100</div>
+        <div class="fn-t">Channels start</div>
+        <div class="fn-d">Everyone uploads. Almost no one has a system.</div>
+        <div class="fn-bar" data-dots="100" data-on="100"></div>
+      </div>
+      <div class="fn rv d1" style="background:#fff">
+        <div class="fn-n" style="color:var(--gray)">80</div>
+        <div class="fn-t">Stay channels in name only</div>
+        <div class="fn-d">They post, stall, and never reach monetization.</div>
+        <div class="fn-bar" data-dots="100" data-on="80"></div>
+      </div>
+      <div class="fn dark rv d2">
+        <div class="fn-n" style="color:var(--red)">20</div>
+        <div class="fn-t">Actually build something</div>
+        <div class="fn-d">YTMAX is the playbook for getting into this group, and then getting paid.</div>
+        <div class="fn-bar" data-dots="100" data-on="20"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow"><span class="dot"></span>The track record</span>
+      <h2 class="h2">From 0 to 783K.<br><em>Milestone by milestone.</em></h2>
+    </div>
+    <div class="tl-wrap">
+      <figure class="tl-img rv"><img src="assets/2016.jpg" alt="Chadtag in 2016, before the channel grew" loading="lazy"><figcaption>2016 · 0 subscribers</figcaption></figure>
+      <ol class="tl">
+        <li class="rv"><div class="tl-k">2016 · Start</div><div class="tl-n">0</div><p class="tl-d">Same starting point as you: no audience, no money, no system.</p></li>
+        <li class="rv"><div class="tl-k">Milestone</div><div class="tl-n">100,000</div><p class="tl-d">Silver Play Button from YouTube.</p></li>
+        <li class="rv"><div class="tl-k">First year of growth</div><div class="tl-n">130,000+</div><p class="tl-d">Organic growth without relying on viral luck or chasing trends.</p></li>
+        <li class="rv"><div class="tl-k">Monetization</div><div class="tl-n">₹10,00,000+</div><p class="tl-d">Revenue from YouTube, including hundreds of Chadmax course sales, with ₹0 spent on ads.</p></li>
+        <li class="rv"><div class="tl-k">Milestone</div><div class="tl-n">655,000</div><p class="tl-d">Where the first YTMAX page left off.</p></li>
+        <li class="rv now"><div class="tl-k">Today</div><div class="tl-n">783,000</div><p class="tl-d">And still compounding. The same system, now in six modules.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section class="sec band" id="modules">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>What's inside</span>
+      <h2 class="h2" style="color:#fff">6 modules.<br><em>One system.</em></h2>
+      <p class="lead">Everything you need to turn a YouTube channel into an income stream, in the order you need it.</p>
+    </div>
+    <div class="mods">
+      <div class="mod rv"><div class="mod-top"><span class="mod-n">MODULE 01</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></div><h3>Multiple Income Streams</h3><p>Hours on earning from YouTube beyond low-RPM AdSense, with income that doesn't swing with ad rates.</p><span class="mod-big">01</span></div>
+      <div class="mod rv d1"><div class="mod-top"><span class="mod-n">MODULE 02</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span></div><h3>Channel Growth &amp; Reach</h3><p>How to grow your channel so every video reaches more people than the last.</p><span class="mod-big">02</span></div>
+      <div class="mod rv d2"><div class="mod-top"><span class="mod-n">MODULE 03</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M17 11a4 4 0 0 0 0-8M22 21a7 7 0 0 0-5-6.7"/></svg></span></div><h3>Loyal, High-Quality Audience</h3><p>Attract viewers who stay to the end and come back, not ones who click off when it gets slow.</p><span class="mod-big">03</span></div>
+      <div class="mod rv"><div class="mod-top"><span class="mod-n">MODULE 04</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3 6.5 7 .9-5.1 4.8 1.3 7L12 17.8 5.8 21.2l1.3-7L2 9.4l7-.9z"/></svg></span></div><h3>A Personal Brand That Sticks</h3><p>Build a brand people remember and trust, which is what everything else is built on.</p><span class="mod-big">04</span></div>
+      <div class="mod rv d1"><div class="mod-top"><span class="mod-n">MODULE 05</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></div><h3>High Conversions</h3><p>Turn viewers into buyers. The method behind hundreds of course sales with ₹0 in ads.</p><span class="mod-big">05</span></div>
+      <div class="mod rv d2"><div class="mod-top"><span class="mod-n">MODULE 06</span><span class="mod-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span></div><h3>YouTube Leverage</h3><p>Use the reach of YouTube to get what you want by giving people what they want.</p><span class="mod-big">06</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>Proof</span>
+      <h2 class="h2">Why trust me?<br><em>Look at the receipts.</em></h2>
+    </div>
+    <div class="proof-grid">
+      <div class="pc rv"><div class="pc-img"><img src="assets/plaque.jpg" alt="Chadtag holding YouTube Silver Play Button for 100,000 subscribers" loading="lazy"></div><div class="pc-cap"><span>Silver Play Button</span><small>100K VERIFIED</small></div></div>
+      <div class="pc rv d1"><div class="pc-img"><img src="assets/student-dm.jpg" alt="Message from a YTMAX student praising the course" loading="lazy"></div><div class="pc-cap"><span>Student message</span><small>YTMAX STUDENT</small></div></div>
+      <div class="stack">
+        <div class="pc metric rv d2">
+          <div>
+            <div class="big">₹10L+</div>
+            <p>Course and digital sales, generated organically from YouTube.</p>
+          </div>
+          <div class="rows">
+            <div><span>Ad spend</span><b>₹0</b></div>
+            <div><span>Chadmax sales</span><b>Hundreds</b></div>
+            <div><span>Traffic source</span><b>100% organic</b></div>
+          </div>
+        </div>
+        <div class="pc dark rv d3"><div class="big">783K</div><p>Subscribers on YouTube, and growing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section class="sec" style="background:var(--light)">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>Same creator, three playbooks</span>
+      <h2 class="h2">It's not a one-off.<br><em>The system works across platforms.</em></h2>
+    </div>
+    <div class="eco">
+      <div class="eco-c rv"><span class="eco-tag">Looksmaxxing</span><h3>Chadmax</h3><dl><div><dt>Ebook pages</dt><dd>400+</dd></div><div><dt>Video modules</dt><dd>34+</dd></div><div><dt>Sales</dt><dd>Hundreds</dd></div><div><dt>Ad spend</dt><dd>₹0</dd></div></dl></div>
+      <div class="eco-c rv d1"><span class="eco-tag">Instagram</span><h3>Instamax</h3><dl><div><dt>Followers</dt><dd>258K</dd></div><div><dt>Reach, 30 days</dt><dd>23M+</dd></div><div><dt>Modules</dt><dd>6</dd></div><div><dt>Ad spend</dt><dd>₹0</dd></div></dl></div>
+      <div class="eco-c hl rv d2"><span class="eco-you">You're here</span><span class="eco-tag">YouTube</span><h3>YTMAX</h3><dl><div><dt>Subscribers</dt><dd>783K</dd></div><div><dt>Revenue</dt><dd>₹10L+</dd></div><div><dt>Modules</dt><dd>6</dd></div><div><dt>Ad spend</dt><dd>₹0</dd></div></dl></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>Before vs after</span>
+      <h2 class="h2">Guessing vs a system.</h2>
+    </div>
+    <div class="cmp rv">
+      <div class="cmp-row"><div></div><div>Without YTMAX</div><div>With YTMAX</div></div>
+      <div class="cmp-row"><div>Income sources</div><div>AdSense only</div><div>Multiple streams</div></div>
+      <div class="cmp-row"><div>Growth</div><div>Hoping for a viral hit</div><div>A repeatable process</div></div>
+      <div class="cmp-row"><div>Audience</div><div>Clicks off when bored</div><div>Loyal and returning</div></div>
+      <div class="cmp-row"><div>Selling</div><div>Paid ads or nothing</div><div>₹0 ad spend</div></div>
+      <div class="cmp-row"><div>Cost</div><div>Years of trial and error</div><div>₹699, once</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>Is this for you?</span>
+      <h2 class="h2">Be honest.</h2>
+    </div>
+    <div class="who">
+      <div class="who-c yes rv"><h3>For you if</h3><ul>
+        <li><i>✓</i><span><b>You're stuck before monetization.</b> Posting, but not growing.</span></li>
+        <li><i>✓</i><span><b>You're starting at 0.</b> No channel or audience needed.</span></li>
+        <li><i>✓</i><span><b>You're monetized but earning little.</b> AdSense alone isn't enough.</span></li>
+        <li><i>✓</i><span><b>You want to sell something.</b> A course, coaching or a product, without ads.</span></li>
+      </ul></div>
+      <div class="who-c no rv d1"><h3>Not for you if</h3><ul>
+        <li><i>✕</i><span><b>You want overnight results.</b> Growth compounds; it isn't instant.</span></li>
+        <li><i>✕</i><span><b>You won't upload.</b> The system only works if you apply it.</span></li>
+        <li><i>✕</i><span><b>You're after hacks.</b> This is fundamentals that keep working.</span></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="sec" style="padding-top:0" id="buy">
+  <div class="wrap">
+    <div class="offer rv">
+      <div>
+        <span class="eyebrow" style="color:#8a8a96"><span class="dot"></span>The offer</span>
+        <h2 class="h2">Everything for<br><em>one payment.</em></h2>
+        <ul class="offer-list">
+          <li><span>6 video modules</span><b>✓</b></li>
+          <li><span>Instant access after checkout</span><b>✓</b></li>
+          <li><span>Lifetime access, mobile &amp; desktop</span><b>✓</b></li>
+          <li><span>1-on-1 coaching calls</span><b style="color:#6e6e78">Discontinued</b></li>
+        </ul>
+      </div>
+      <div class="ticket">
+        <div class="ticket-top"><span>YTMAX</span><span>One-time</span></div>
+        <span class="p-new">₹699</span>
+        <span class="p-old">₹1,999</span><span class="save">Save 65%</span>
+        <div class="coach">₹1,999 included 1-on-1 coaching. Coaching has ended, so the course is now ₹699.</div>
+        <hr>
+        <a href="https://cosmofeed.com/view_ch/2a2a92b1-9166-4272-b797-106092f8a84f" target="_blank" rel="noopener" class="btn btn-red">Get YTMAX — ₹699 <span class="arr">→</span></a>
+        <small>Secure checkout on Cosmofeed · Instant access</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow"><span class="dot"></span>FAQ</span>
+      <h2 class="h2">Questions? <em>Answered.</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Why is it ₹699 instead of ₹1,999?</summary><p>₹1,999 included 1-on-1 coaching calls. Coaching is no longer available, so the price dropped to ₹699. You still get every module.</p></details>
+      <details><summary>Do I need an existing channel or subscribers?</summary><p>No. Whether you're at 0 subscribers or have a channel stuck before monetization, YTMAX covers growth and monetization from the ground up.</p></details>
+      <details><summary>How soon do I get access?</summary><p>Immediately after checkout on Cosmofeed. Watch at your own pace on mobile or desktop, with lifetime access.</p></details>
+      <details><summary>Do I have to spend money on ads?</summary><p>No. The channel behind YTMAX reached 783K subscribers and ₹10 Lac+ in revenue with ₹0 spent on advertising.</p></details>
+      <details><summary>How fast will I see results?</summary><p>It depends on how consistently you apply it. Anyone promising overnight results is lying; growth compounds over months of uploads.</p></details>
+      <details><summary>How do I contact you?</summary><p>Email <a href="mailto:chadtag4404@gmail.com" style="text-decoration:underline">chadtag4404@gmail.com</a> for any questions or issues with the course.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap rv">
+    <div class="final-n">783K</div>
+    <h2 class="h2">Your channel is next.</h2>
+    <p class="lead" style="margin:0 auto">The system behind 783K subscribers and ₹10 Lac+ in revenue, for ₹699, once.</p>
+    <a href="https://cosmofeed.com/view_ch/2a2a92b1-9166-4272-b797-106092f8a84f" target="_blank" rel="noopener" class="btn btn-red">Get YTMAX — ₹699 <span class="arr">→</span></a>
+    <small>One-time payment · Instant lifetime access</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fw">
+    <span>© 2026 Ayush Sharma (Chadtag). All rights reserved.</span>
+    <nav>
+      <a href="https://youtube.com/@chadtag" target="_blank" rel="noopener">YouTube ↗</a>
+      <a href="https://www.instagram.com/chadtagyt" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:chadtag4404@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="sbar" id="sbar">
+  <div><div class="sb-p">₹699<s>₹1,999</s></div><div class="sb-t">YTMAX · lifetime access</div></div>
+  <a href="https://cosmofeed.com/view_ch/2a2a92b1-9166-4272-b797-106092f8a84f" target="_blank" rel="noopener" class="btn btn-red">Get YTMAX <span class="arr">→</span></a>
+</div>
+
+<script>
+(function(){
+  // funnel dots
+  document.querySelectorAll('.fn-bar').forEach(function(el){
+    var n=+el.dataset.dots,on=+el.dataset.on,h='';
+    for(var i=0;i<n;i++)h+='<i'+(i<on?' class="on"':'')+'></i>';
+    el.innerHTML=h;
+  });
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function count(el){
+    var to=+el.dataset.count,suf=el.dataset.suffix||'';
+    if(reduce){el.textContent=to+suf;return}
+    var t0=null,d=1600;
+    function step(t){
+      if(!t0)t0=t;var p=Math.min((t-t0)/d,1),e=1-Math.pow(1-p,3);
+      el.textContent=Math.round(to*e)+suf;
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});
+    document.querySelectorAll('[data-count]').forEach(function(e){e.textContent=e.dataset.count+(e.dataset.suffix||'')});
+    document.querySelectorAll('.bar i').forEach(function(e){e.style.width=e.dataset.w+'%'});
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target;el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(count);
+      el.querySelectorAll('.bar i').forEach(function(b){b.style.width=b.dataset.w+'%'});
+      io.unobserve(el);
+    });
+  },{threshold:0.15,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+
+  // sticky buy bar: show after hero, hide near the offer/final CTA
+  var bar=document.getElementById('sbar'),hero=document.querySelector('.hero'),
+      offer=document.getElementById('buy'),fin=document.querySelector('.final');
+  function vis(el){var r=el.getBoundingClientRect();return r.top<innerHeight&&r.bottom>0}
+  function upd(){bar.classList.toggle('show',hero.getBoundingClientRect().bottom<0&&!vis(offer)&&!vis(fin))}
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+</script>
+</body>
+</html>
